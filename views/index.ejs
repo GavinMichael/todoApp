@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do App</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<!--Bootstrap container-->
+<div class="container">
+    <!--Header-->
+    <h1 class="title">To Do App</h1>
+
+    <!--Form-->
+    <form action="/addTodo" method="post">
+        <!--Error-->
+        <span class="error">Please fill the Title & Description fields</span>
+
+        <!--Title Input-->
+        <input type="text" class="form-control" placeholder="To Do Title" name="title" id="todoTitle">
+        <!--Desc Input-->
+        <input type="text" class="form-control" placeholder="To Do Description" name="desc" id="todoDesc">
+
+        <!--Submit Btn-->
+        <button class="btn btn-default pull-right" type="submit" id="addTodoBtn" >Add To Do</button>
+
+    </form>
+
+    <br><br>
+
+    <!--To do items here-->
+    <ul class="list-group">
+
+        <!--All the todos go he-->
+
+    </ul>
+</div> <!-- End of Bootstrap container -->
+
+<!--jQuery CDN-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<!--Bootstrap JS-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--Custom JS-->
+<script src="../assets/app.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+.title{
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+.save-item{
+    display: none;
+}
+
+.error{
+    padding-left: 15px;
+    color: mediumvioletred;
+    font-size: 16px;
+    font-family: Tahoma;
+    display: none;
+}
+
+.form-control{
+    margin-bottom: 2px;
+    border-radius: 0px;
+    border: 1px solid #b7b7b7;
+}
+
+#addTodoBtn{
+    border-radius: 0px;
+    border: 1px solid #b7b7b7;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+}
+
+#addTodoBtn:hover{
+    background: #949494;
+}
+
+.glyphicon-remove {
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.glyphicon-remove:hover{
+    color: #ff5156;
+}
