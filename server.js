@@ -12,8 +12,8 @@ app.use('/assets', express.static(__dirname + '/assets'));
 // Setting the rendering engine to EJS
 app.set('view engine', 'ejs');
 
-
-// Start app and listen on port 3000
-app.listen(3000, function () {
-	console.log('Server Started on port 3000');
+var port = process.env.PORT || 3000;
+// Start app and listen on port
+app.listen(port, function () {
+	console.log('Server Started on port ' + port);
 });
