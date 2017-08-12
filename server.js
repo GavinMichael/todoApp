@@ -1,6 +1,10 @@
 // Import Express
 const express = require('express');
+// Import CORS
+var cors = require('cors')
 const app = express();
+
+app.use(cors())
 
 // Import the controller
 require('./todoCtrl')(app);
